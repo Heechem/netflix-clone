@@ -19,8 +19,6 @@ function Banner() {
     fetchData();
   }, []);
 
-  console.log(movie);
-
   function truncate(stri, n) {
     return stri?.length > n ? stri.substr(0, n - 1) + '...' : stri;
   }
