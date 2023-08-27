@@ -44,7 +44,9 @@ function SignupScreen() {
   return (
     <div className="signupScreen">
       <form>
-        <h1>Sign In</h1>
+        <h1>
+          Sign In <span>(use any fake email & password)</span>
+        </h1>
         <input
           placeholder="Email"
           type="email"
