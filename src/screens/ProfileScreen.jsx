@@ -5,6 +5,7 @@ import { selectUser } from '../features/userSlice';
 import { auth } from '../firebase';
 import { useNavigate } from 'react-router-dom';
 import './ProfileScreen.css';
+import PlansScreen from './PlansScreen';
 
 function ProfileScreen() {
   const user = useSelector(selectUser);
@@ -20,9 +21,10 @@ function ProfileScreen() {
             alt=""
           />
           <div className="profileScreen__details">
-            <h2>{user.email}</h2>
+            <h2>{user?.email}</h2>
             <div className="profileScreen__plans">
               <h3>Plans</h3>
+              <PlansScreen />
               <button
                 className="profileScreen__signOut"
                 onClick={() => {
